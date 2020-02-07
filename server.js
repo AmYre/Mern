@@ -32,4 +32,6 @@ mongoose.connect('mongodb+srv://dev:Zelda28*@cluster0-4al0t.mongodb.net/test?ret
     () => { console.log("connected to DB")}
 );
 
-app.listen(5000);
+const port = process.env.PORT || 5000;
+
+app.listen(port);
