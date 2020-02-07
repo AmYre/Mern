@@ -4,9 +4,7 @@
   "description": "Learn the Mern",
   "main": "server.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\" ",
-    "client": "npm start --prefix app",
-    "server": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "DEVolution",
   "license": "MIT",
