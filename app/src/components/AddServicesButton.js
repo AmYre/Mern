@@ -8,7 +8,7 @@ const AddServices = () => {
 
 	const addService = (data) => axios({
 		method: 'post',
-		url: process.env.PUBLIC_URL+'/posts',
+		url: 'https://learn-mern-stack-28.herokuapp.com/posts',
 		data: data})
 
 	return (

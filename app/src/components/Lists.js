@@ -18,7 +18,7 @@ const ServicesList = props => {
 
 	useEffect( () => {
 		
-		axios.get(process.env.PUBLIC_URL+'/posts')
+		axios.get('https://learn-mern-stack-28.herokuapp.com/posts')
 			.then( response => {dispatch(ActionInitMovies(response.data));setMoviesLoading(false)} )
 			.catch(err => {setMoviesError(true);setMoviesLoading(false)})
 	}, []);
