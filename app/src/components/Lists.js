@@ -18,12 +18,12 @@ const ServicesList = props => {
 
 	useEffect( () => {
 		
-		axios.get('http://localhost:5000/posts')
+		axios.get(process.env.PUBLIC_URL+'/posts')
 			.then( response => {dispatch(ActionInitMovies(response.data));setMoviesLoading(false)} )
 			.catch(err => {setMoviesError(true);setMoviesLoading(false)})
 	}, []);
 
-	const delService = (id) => axios.delete(`http://localhost:5000/posts/${id}`)
+	const delService = (id) => axios.delete(process.env.PUBLIC_URL+`/posts/${id}`)
 	.then(resp => console.log(resp));
 
 	return (

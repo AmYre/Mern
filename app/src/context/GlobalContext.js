@@ -9,7 +9,7 @@ export const DataContext = props => {
 	const [isError, setIsError] = useState(false);
 
 	useEffect( () => {
-		axios.get('http://localhost:5000/posts')
+		axios.get(process.env.PUBLIC_URL+'/posts')
 			.then( response => {setServices(response.data);setIsLoading(false)} )
 			.catch(err => setIsError(true))
 	}, []);

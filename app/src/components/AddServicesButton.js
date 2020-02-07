@@ -8,7 +8,7 @@ const AddServices = () => {
 
 	const addService = (data) => axios({
 		method: 'post',
-		url: 'http://localhost:5000/posts',
+		url: process.env.PUBLIC_URL+'/posts',
 		data: data})
 
 	return (
