@@ -6,8 +6,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\" ",
     "client": "npm start --prefix app",
-    "server": "nodemon server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix app && npm run build --prefix app"
+    "server": "nodemon server.js"
   },
   "author": "DEVolution",
   "license": "MIT",
